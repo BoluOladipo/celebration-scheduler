@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celebrants</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="slide-in-left">
+  <header class="header">
+     <h1>CFM Greeting Scheduler</h1>
+    <nav>
+      <a href="index.html">Dashboard |</a>
+      <a href="templates.html">Templates |</a>
+      <a href="celebrants.html">Celebrants |</a>
+      <a href="sent.html">Sent Messages</a>
+
+    </nav>
+  </header>
+
+  <main class="container">
+     <h1>Manage Celebrants</h1>
+    <form class="card" id="celebrantForm">
+      <label>Full Name</label>
+      <input type="text" id="name" required />
+
+      <label>Email</label>
+      <input type="email" id="email" required />
+
+      <label>Occasion</label>
+      <select id="occasion">
+        <option value="Birthday">Birthday</option>
+        <option value="Anniversary">Anniversary</option>
+      </select>
+
+      <label>Date</label>
+      <input type="date" id="date" required />
+
+      <button type="submit">Add Celebrant</button>
+    </form>
+
+    <div class="card">
+      <h3>Celebrants List</h3>
+      <ul id="celebrantList"></ul>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
